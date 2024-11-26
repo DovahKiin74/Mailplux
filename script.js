@@ -21,3 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("overlay-signup").classList.add("d-none");
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            navbar.classList.add("scrolled-down");
+        } else {
+            navbar.classList.remove("scrolled-down");
+        }
+    });
+});
