@@ -12,9 +12,9 @@ body{
 :root {
     --med-head-light-color: #fff;
     --med-head-color: #fff;
-    --med-head-font-size: 44px;
+    --med-head-font-size: 60px;
     --med-head-smsc-font-size: 30px;
-    --med-head-font-weight: 600;
+    --med-head-font-weight: 800;
     --med-head-smsc-line-height: 44px;
     --med-head-block-margin: 1rem;
     --med-text-icon-light-color: #fff;
@@ -25,7 +25,7 @@ body{
     --lrg-icon-font-weight: 900;
     --med-text-light-color: #fff;
     --med-text-color: #e7e7e7;
-    --med-text-font-size: 16px;
+    --med-text-font-size: 20px;
     --med-text-font-weight: 400;
     --med-text-line-height: 28px;
     --med-text-block-margin: 1rem;
@@ -61,6 +61,29 @@ body{
     --bd-pink-rgb: 232, 62, 140; /* Example: Pink Color */
 }
 
+
+
+.theme-toggler{
+    background: transparent;
+    border: 1px solid #fff;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    padding: 6px;  
+}
+.theme-switcher{
+    height: 100%;
+    width: 50%;
+    background: white;
+    border-radius: 20px;
+}
+.theme-toggler.dark-mode .theme-switcher{
+    float: right;
+    background: #212529;
+}
+.theme-toggler.dark-mode{
+    border: 1px solid #212529;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -69,23 +92,21 @@ body{
     background-color: transparent;
     height: 10vh;
     width: 100%;
-    border-radius: 10px;
     transition: 0.333s linear;
 }
 .navbar.scrolled-down{
     top: 0;
     background: #212529;
-    border: 1px solid #cccccc38;
+    border-bottom: 1px solid #cccccc38;
     box-shadow: 0 0 10px #0003;
-    width: calc(100% - 20%);
-    margin: 0 10%;
-    top: 2%;
+    border-radius: 0;
+    top: 0;
     height: auto;
     position: fixed;
     z-index: 10000;
 }
 .navbar.scrolled-down>.container{
-    padding: 10px !important;
+    padding: 20px 8px !important;
 }
 .navbar-brand {
     height: 80px;
@@ -104,7 +125,7 @@ body{
 }
 .nav-link {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff75;
     border: 1px solid transparent;
     border-radius: 5px;
     font-size: 15px;
@@ -113,7 +134,6 @@ body{
 }
 
 .nav-link:hover {
-    border: 1px solid #fff;
     color: #fff;
 }
 .nav-link a::before {
@@ -790,23 +810,30 @@ p.small-para a:hover{
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
+    height: 300px;
+    border: 0.55px solid #ffffff4e;
+    border-left: 0;
+    border-right: 0;
 }
 
 .card__one {
     text-align: start;
     padding: 0 20px;
-    margin: 5px;
+    margin: 0;
     background: #212529;
     color: #fff !important;
-    height: 300px;
-    border-radius: 40px;
+    height: 100%;
+    align-items: center;
     border-bottom: 10px solid transparent;
-    border: 2px solid #06afa1;
+    border-right: 0.55px solid #ffffff4e;
     position: relative;
     overflow: hidden;
     z-index: 0;
     transition: .3s border;
-    align-items: center;
+    justify-content: space-between;
+}
+.card__one.last{
+    border-right: 1px solid transparent;
 }
 
 .card--icon {
@@ -817,29 +844,12 @@ p.small-para a:hover{
 }
 
 .card__one:hover {
-    border: 2px solid #06afa1;
-    border-bottom: 10px solid #06afa1;
 }
 
 .card__one:hover .card--icon {
     color: var(--med-text-icon-light-hover-color);
 }
 
-.card__one::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 0;
-    width: 100%;
-    z-index: -1;
-    background: #1d2023;
-    transition: .5551s;
-}
-
-.card__one:hover::after {
-    height: 50%;
-}
 
 .card--description h2 {
     color: var(--med-card-color);
@@ -883,6 +893,10 @@ p.small-para a:hover{
     outline: none;
     background: transparent;
 }
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after{
+    color: #fff !important;
+}
 .accordion-item.collapsed{
     background: red;
 }
@@ -910,9 +924,12 @@ p.small-para a:hover{
 .show-insights{
     padding: 20px;
     margin: 10px 0;
-    border: 1px solid #cccccc38;
-    /* background: #00aeff15; */
+    /* border: 1px solid #cccccc38; */
+    background: #00aeff15;
     border-radius: 8px;
+}
+.show-insights.second{
+    background: #ffae0015;
 }
 .show-insights h2{
     margin-block-end: 10px;
@@ -1068,8 +1085,16 @@ p.small-para a:hover{
 }
 .container-fluid{
     padding: 0;
+    border: none;
+}
+.container{
 }
 /* Pricing Plans */
+#pricing{
+    background: url(images/bann.png);
+    background-position: center;
+    background-size: cover;
+}
 .card-shadow {
     /* border: 2px solid #212529; */
     display: flex;
@@ -1255,9 +1280,11 @@ p.small-para a:hover{
 .features-description-container ul li{
     list-style-type: none;
     font-size: 15px;
-    line-height: 24px;
-    font-weight: 400;
     margin: 0;
+    line-height: 24px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    font-weight: 400;
     color: #fff;
 }
 .features-description-container ul{
@@ -1265,6 +1292,7 @@ p.small-para a:hover{
 }
 .features-description-container ul li b{
     font-weight: 700;
+    margin-right: 7px;
 }
 .btn-featured-colored{
     padding: 12px 0;
@@ -1272,7 +1300,7 @@ p.small-para a:hover{
     position: relative;
     background: transparent;
     color: #06afa1;
-    font-size: 14px;
+    font-size: 12px;
     transition: 300ms;
     font-weight: 600;
 }
@@ -1290,7 +1318,7 @@ p.small-para a:hover{
 }
 .btn-featured-colored::after{
     content: '';
-    height: 1px;
+    height: 2px;
     width: 0;
     background: #12d0c0;
     left: 0;
@@ -1302,6 +1330,11 @@ p.small-para a:hover{
     width: 100%;
 }
 /* Mobile Features */
+#mobile{
+    background: url(images/price.png);
+    background-position: bottom;
+    background-size: cover;
+}
 .mobile-features-view{
     padding: 10px;
     border: none;
@@ -1557,6 +1590,10 @@ p.small-para a:hover{
 .btn-footer-light:hover{
     background: #fff;
 }
+
+.feature-column {
+    border-right: 1px solid #cccccc38;  /* Creates a vertical line between columns */
+}
 .footer {
     background-color: #2B3035;
     color: #fff;
@@ -1669,6 +1706,14 @@ p.small-para a:hover{
     .signup-switcher{
         margin: 10px 30px;
     }
+    .carding-area{
+        height: auto;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .card__one.second__hover{
+        border: none;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1692,16 +1737,60 @@ p.small-para a:hover{
     .newsletter-footer h2{
         margin-bottom: 1rem;
     }
+
+
+    
+    .grouped-input{
+        display: block;
+        background: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 8px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .grouped-input input{
+        font-size: 14px;
+        color: #fff;
+        background: transparent;
+        padding: 6px 12px;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .grouped-input .btn-grouped-field{
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+        background: transparent;
+        border: 1px solid #ccccccf8;
+        border-radius: 3px;
+        padding: 6px 24px;
+        outline: none;
+        width: 100%;
+    }
+    .grouped-input .btn-grouped-field:hover{
+        background: #fff;
+        color: #000;
+    }
+
     .footer-info{
         margin-bottom: 4rem;
     }
 }
-@media (max-width: 768px) {    
+@media (max-width: 768px) {  
     .navbar-collapse{
         text-align: center;
         padding: 40px 0;
         transition: 0.3333s;
     }
+    .navbar-collapse.show .navbar.scrolled-down>.container{
+        padding: 20px 8px !important;
+        background: red !important;
+    }  
     .navbar-collapse .nav-item{
         margin: 0;
     }
@@ -1713,6 +1802,13 @@ p.small-para a:hover{
     }
     .popup {
         max-width: 600px;
+    }
+
+    .card__one{
+        border: none;
+    }
+    .feature-column{
+        border: none;
     }
     .form-container {
         padding: 30px;
@@ -1808,9 +1904,6 @@ p.small-para a:hover{
 }
 
 
-.feature-column {
-    border-right: 1px solid #cccccc38;  /* Creates a vertical line between columns */
-}
 
 
 /* Optional: To adjust the vertical lines' appearance */
