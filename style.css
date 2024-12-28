@@ -1061,7 +1061,7 @@ p.small-para a:hover{
 
 .bg-dark-colored{
     color: #fff;
-    background: #212529;
+    background: #212529 !important;
 }
 .bg-darker-colored{
     color: #fff;
