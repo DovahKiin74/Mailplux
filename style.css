@@ -1316,10 +1316,6 @@ p.small-para a:hover{
     padding: 0;
     border: none;
 }
-.container{
-    max-width: 1500px;
-    /* padding: 0; */
-}
 /* Pricing Plans */
 
 .pricing-table {
