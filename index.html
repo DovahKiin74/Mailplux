@@ -15,11 +15,12 @@
 
     <!-- Hero Section -->
     <header class="hero">
+        <div class="animated_color"></div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md p-0">
             <div class="container d-flex align-items-center p-0">
                 <a class="navbar-brand me-auto nav-logo p-0" href="#">
-                    <img src="images/logo.png" alt="Logo">
+                    <img src="images/logo.png" alt="Logo " class="br-50">
                 </a>
                 <!-- Toggle button for mobile view -->
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,32 +43,27 @@
                     </ul>
                 </div>
                 <div class="d-none d-md-flex ms-auto">
-                    <div class="theme-toggler dark-mode" id="theme-toggle">
-                        <div class="theme-switcher"></div>
-                    </div>
                     <a href="#" class="btn navbtn">Signup</a>
                 </div>
             </div>
         </nav>
-        <div class="container  pt-24 zinx-1000">
+        <div class="container pt-24 zinx-1000">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-9 mx-auto">
                     <div class="text-wrapper bg-blight text-center align-items-center justify-center  mx-auto">
-                        <div class="central-logo-container">
-                            <img src="images/logo.png" class="mb-4" alt="">
-                        </div>
-                        <h2>Unlock your business
-                            <br class="d-none d-lg-flex"> potential with mailplux</h2>
+                        <h1>Unlock your business
+                            <br class="d-none d-lg-flex"> potential with mailplux</h1>
                         <p>
                             Looking for a cheap yet unique email service? We’ve got you covered.
-                            Sign up today to get our latest prices and exclusive offers.
-                            Take control of your communication with secure, reliable, and custom email solutions.
+                            Sign up today to get our latest 
+                            <br>
+                            prices and exclusive offers.
                             Join us now and elevate your email experience to the next level.
                         </p>
                     </div>
                     <div class="grouped-input">
                         <input type="text" placeholder="someone@professional.mail.usa">
-                        <button class="btn btn-grouped-field">Get Started</button>
+                        <button class="btn btn-grouped-field"><i class="fa-solid fa-arrow-right"></i></button>
                     </div>         
                 </div>
             </div>
@@ -75,71 +71,75 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="text-center pt-24 bg-dark-colored">
+    <section id="about" class=" pt-24 text-center bg-dark-colored">
         <div class="">
             <div class="text-wrapper bg-colored text-center col-lg-8 mx-auto">
-                <i class="fa-solid fa-inbox icon-dark"></i>
-                <h2>Mailplux Inbox</h2>
-                <p>Where clarity meets convenience in your digital communication.</p>
+                <div class="header__image__container justify-center">
+                    <img src="images/1.png" class="h-100 w-100">
+                </div>
+                <h2>Look Ahead to What We Offer</h2>
+                <p>
+                    At MailPlux, we’re constantly evolving to meet the needs of modern businesses. 
+                    <br>
+                    Our platform provides a forward-thinking approach to email marketing, offering innovative tools and solutions.
+                </p>
                 <button class="btn-featured-colored">
                     Become Leader
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-            <div class="row">
-                <div class="carding-area">
-                    <div class="container h-100">
-                        <div class="row h-100">
-                            <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
-                                <div class="card__one">
-                                    <div class="card--icon">
-                                        <i class="fa-solid fa-infinity"></i>
-                                    </div>
-                                    <div class="card--description">
-                                        <h2>Unlimited Email</h2>
-                                        <p>
-                                            Send and receive emails without worrying about storage limits with our Unlimited Email plan.
-                                        </p>
-                                    </div>
+            <div class="carding-area">
+                <div class="container w-100 p-0 h-100">
+                    <div class="row h-100">
+                        <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
+                            <div class="card__one">
+                                <div class="card--icon">
+                                    <i class="fa-solid fa-infinity"></i>
+                                </div>
+                                <div class="card--description">
+                                    <h2>Unlimited Email</h2>
+                                    <p>
+                                        Send and receive emails without worrying about storage limits with our Unlimited Email plan.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
-                                <div class="card__one second__hover">
-                                    <div class="card--icon">
-                                        <i class="fa-solid fa-user-secret"></i>
-                                    </div>
-                                    <div class="card--description">
-                                        <h2>Email Privacy</h2>
-                                        <p>
-                                            Protect your sensitive communications with our robust email privacy features, including encryption and spam filtering.
-                                        </p>
-                                    </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
+                            <div class="card__one second__hover">
+                                <div class="card--icon">
+                                    <i class="fa-solid fa-user-secret"></i>
+                                </div>
+                                <div class="card--description">
+                                    <h2>Email Privacy</h2>
+                                    <p>
+                                        Protect your sensitive communications with our robust email privacy features, including encryption and spam filtering.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
-                                <div class="card__one">
-                                    <div class="card--icon">
-                                        <i class="fa-solid fa-key"></i>
-                                    </div>
-                                    <div class="card--description">
-                                        <h2>Security Checks</h2>
-                                        <p>
-                                            Rest assured, your emails are safe with our multi-layered security checks, including two-factor authentication and regular security audits.
-                                        </p>
-                                    </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
+                            <div class="card__one">
+                                <div class="card--icon">
+                                    <i class="fa-solid fa-key"></i>
+                                </div>
+                                <div class="card--description">
+                                    <h2>Security Checks</h2>
+                                    <p>
+                                        Rest assured, your emails are safe with our multi-layered security checks, including two-factor authentication and regular security audits.
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
-                                <div class="card__one last">
-                                    <div class="card--icon">
-                                        <i class="fa-solid fa-people-roof"></i>
-                                    </div>
-                                    <div class="card--description">
-                                        <h2>Domain Assistance</h2>
-                                        <p>
-                                            Effortlessly set up and manage your custom domain emails with our expert domain assistance.
-                                        </p>
-                                    </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-3 p-0 m-0">
+                            <div class="card__one last">
+                                <div class="card--icon">
+                                    <i class="fa-solid fa-people-roof"></i>
+                                </div>
+                                <div class="card--description">
+                                    <h2>Domain Assistance</h2>
+                                    <p>
+                                        Effortlessly set up and manage your custom domain emails with our expert domain assistance.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -150,476 +150,441 @@
     </section>
 
     <!-- Features Section -->
-    <div class="container-fluid bg-dark-colored">
-        <div class="container pt-24">
+    <div class="container-fluid bg-dark-colored border-11bot">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-5">
                     <div class="features-description-container">
-                        <span class="orchid">
-                            <i class="fa-solid fa-infinity"></i>
-                        </span>
-                        <h2>Unlimited Email Allowance</h2>
-                        <p>
-                            Say goodbye to email storage woes! With our professional email packages, you gain access to an unlimited number of email accounts. Create separate inboxes for work, personal, and projects, all managed seamlessly from a single platform. This flexibility empowers you to organize your communication effectively and maintain a professional image across all your endeavors.
-                        </p>
-                        <ul>
-                            <li>
-                                <b>Storage freedom:</b> No more worrying about running out of space.
-                            </li>
-                            <li>
-                                <b>Organization:</b> Create and manage multiple inboxes for different purposes.
-                            </li>
-                            <li>
-                                <b>Professionalism:</b> Maintain a clear separation between personal and professional communication.
-                            </li>
-                            <li>
-                                <b>Efficiency:</b> Manage all your emails from a single, convenient platform.
-                            </li>
-                        </ul>
-                        <button class="btn-featured-colored open-popup">Become Leader
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+                        <div class="hover__link__contains" data-index="1">
+                            <h2>Unlimited Email Allowance</h2>
+                            <div class="hover__content__contains">
+                                <p>
+                                    Say goodbye to email storage woes! With our professional email packages, you gain access to an unlimited number of email accounts. Create separate inboxes for work, personal, and projects, all managed seamlessly from a single platform.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Get yourself a mail
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hover__link__contains" data-index="2">
+                            <h2>Professional Domain Mails</h2>
+                            <div class="hover__content__contains">
+                                <p>
+                                    Elevate your professional image with custom domain emails. Instead of generic addresses like info@gmail.com create professional email addresses like info@adublisher.com that reflect your brand identity.
+                                </p>
+                                <p>
+                                    This builds trust and confidence in your clients and partners, showcasing a polished and established online presence.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Check our Professional Mails
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hover__link__contains" data-index="3">
+                            <h2>Efficient Storage Management</h2>
+                            <div class="hover__content__contains show__content">
+                                <p>
+                                    Optimize and organize your data seamlessly for enhanced accessibility and performance.
+                                </p>
+                                <p>
+                                    With our comprehensive mail management tools, you can stay organized, productive, and in control of your email communications.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Read more about storage
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-7">
                     <div class="img-holder-featured">
-                        <img src="images/earnings.png" class="h-100 w-100">
+                        <img src="images/Single Domain.png" class="h-100 w-100" auto-change-index="1" style="display: none;">
+                        <img src="images/Storage Analysis.png" class="h-100 w-100" auto-change-index="2" style="display: none;">
+                        <img src="images/Gouping.png" class="h-100 w-100" auto-change-index="3" style="display: none;">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--  Mails Features -->
-    <div class="mail-features pt-24 bg-dark-colored">
+    <div class="container-fluid bg-dark-colored border-11bot">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="features-description-container">
-                        <span class="orange">
-                            <i class="fa-solid fa-list-check"></i>
-                        </span>
-                        <h2>Mails Management</h2>
-                        <p>
-                            Take control of your inbox with our intuitive and powerful mail management tools. Effortlessly organize your emails with features like:
-                        </p>
-                        <ul>
-                            <li>
-                                <b>Smart Folders:</b>Automatically sort incoming emails into predefined folders based on sender, subject, or keywords.
-                            </li>
-                            <li>
-                                <b>Advanced Search Filters:</b>Quickly locate specific emails using a variety of search criteria, including sender, recipient, date, and keywords.
-                            </li>
-                            <li>
-                                <b>Email Archiving:</b>Archive old emails to free up inbox space while maintaining easy access for future reference.
-                            </li>
-                            <li>
-                                <b>Spam Filtering:</b>Our robust spam filtering system blocks unwanted emails and keeps your inbox clean and secure.
-                            </li>
-                        </ul>
-                        <p>
-                            With our comprehensive mail management tools, you can stay organized, productive, and in control of your email communications.
-                        </p>
-                        <button class="btn-featured-colored">
-                            Become Leader
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                    <div class="features-description-container h-100">
+                        <h3>Work more efficiently $ effectively, 33% increased reviews and balance!
+                            <span>Above are the features that anyone using free package can get for free.</span>
+                        </h3>
+                        <button class="btn-featured-colored open-popup">Take it, it's free
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="image-holder">
-                        <img src="images/mails.png" class="w-100 h-100">
+                <div class="col-12 col-lg-5">
+                    <div class="testimonial-box">
+                      <div class="testimonial-header">
+                        <h5 class="testimonial-username">John Doe</h5>
+                      </div>
+                      <div class="testimonial-message">
+                        <p>" I’ve been impressed by the core features it offers. It’s user-friendly, reliable, and provides the essential tools I need for communication. "</p>
+                      </div>
+                      <button class="btn-featured-colored open-popup">Read Customer's Story
+                          <i class="fa-solid fa-arrow-right"></i>
+                      </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Mobile Section -->
-    <section id="mobile" class="mobile text-center  py-24 bg-dark-colored">
+    <section id="mobile" class="mobile text-center  border-11bot pt-24 bg-dark-colored">
         <div class="container">
             <div class="text-wrapper bg-colored text-center col-lg-8 mx-auto">
-                <i class="fa-solid fa-pager icon-dark"></i>
-                <h2>Why Choose MailPlux</h2>
-                <p>Choose MailPlux for unlimited accounts, custom domains, and a private, secure email experience.</p>
+                <div class="header__image__container justify-center">
+                    <img src="images/2.png" class="h-100 w-100">
+                </div>
+                <h2>The Value of Choosing MailPlux</h2>
+                <p>
+                    MailPlux offers a powerful, user-friendly solution that combines advanced features, reliable performance, and seamless integration,
+                    <br>
+                    making it the ideal choice for businesses seeking efficient and scalable email marketing tools.
+                </p>
                 <button class="btn-featured-colored">
                     Become Leader
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 col-md-6 feature-column">
-                            <div class="mobile-features-view dbb">
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                <div class="mobile-feature-holder">
-                                    <h1>
-                                        Mailplux:
-                                    </h1>
-                                    <p class="para-heading">
-                                        Mailplux empowers you with unlimited flexibility, allowing you to create multiple accounts under a single plan with minimal verification hassle. Say goodbye to limitations and take control of your communication with Mailplux.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-20">
-                            <div class="mobile-features-view dbb">
-                                <i class="fa-solid fa-mobile"></i>
-                                <div class="mobile-feature-holder">
-                                    <h1>
-                                        Gmail/Outlook:
-                                    </h1>
-                                    <p class="para-heading">
-                                        Gmail and Outlook provide convenient and free email services with integrated features like calendar, contacts, and video calling.Ideal for personal use and everyday communication, offering a user-friendly interface and a vast user base.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 feature-column">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Multiple Accounts:
-                                    </h2>
+            <div class="col-12 p-0 m-0 choose__container overflow-hidden">
+                <div class="row d-flex p-0 m-0 overflow-hidden">
+                    <div class="col-12 col-lg-6 p-0 m-0">
+                        <div class="choose__content">
+                            <h2>
+                                Mailplux empowers you with<span> unlimited flexibility, allowing you to create multiple accounts under a single plan.</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
                                     <p>
                                         Allows multiple accounts per plan, offering flexibility for businesses and individuals.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-20">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Multiple Accounts:
-                                    </h2>
-                                    <p>
-                                        Generally limit account creation to a single account per user, often requiring separate subscriptions for additional accounts.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 feature-column">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Simplified Account Creation:
-                                    </h2>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
                                     <p>
                                         Streamlined account creation with minimal verification steps, improving user experience.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-20">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Account Creation:
-                                    </h2>
-                                    <p>
-                                        Often require extensive verification processes, including phone number confirmation and potential limitations on the number of accounts per phone number.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 feature-column">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Domain-Based Email:
-                                    </h2>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
                                     <p>
                                         Offers custom domain-based email addresses, enhancing professionalism and brand identity.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-20">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Domain-Based Email:
-                                    </h2>
-                                    <p>
-                                        Primarily provide email addresses tied to their respective domains (e.g., @gmail.com, @outlook.com), limiting branding opportunities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 feature-column">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Private Mailing System:
-                                    </h2>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
                                     <p>
                                         Provides a private mailing system, giving users greater control over their data and communication.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-20">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Private Mailing System:
-                                    </h2>
-                                    <p>
-                                        Reliant on third-party servers and subject to the data practices of these providers.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 feature-column">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Enhanced Security Measures:
-                                    </h2>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
                                     <p>
                                         Emphasizes robust security measures like strong passwords and two-factor authentication.
                                     </p>
-                                </div>
-                            </div>
+                                </li>
+                            </ul>
+                            <button class="btn-featured-colored">
+                                Become Leader
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <div class="col-12 col-md-6 pl-20">
-                            <div class="mobile-features-view">
-                                <div class="mobile-feature-holder">
-                                    <h2>
-                                        Security:
-                                    </h2>
-                                    <p>
-                                        Offer strong security features, but Mailplux might have a greater focus on user-centric security controls and customization.
-                                    </p>
-                                    <br>
-                                    <br>
-                                    <p class="small-para">
-                                        <a href="">Read our installation docs</a>  for more info and additional guidance.
-                                    </p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p-0 m-0 overflow-hidden">
+                        <div class="image overflow-hidden h-100 w-100">
+                            <img src="images/Choosing.png" class="h-100 w-100">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-wrapper bg-colored text-center col-lg-8 mx-auto pt-4">
-                <h3> Read our getting started guides</h3>
-                <p class="small-para">Get a jump on including new project with our official <a href="">guides</a>.</p>
+            <div class="col-12 p-0 m-0 my-4">
+                <div class="row gx-4 d-flex align-items-center">
+                    <div class="col-6">
+                        <div class="mark__icons__container">
+                            <div class="malfunctioned__container">
+                                <div class="row">
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                </div>
+                                <div class="row" aria-hidden="true">
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="malfunctioned__container">
+                                <div class="row">
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                    <div class="mark__icon">
+                                        <i class="fa-solid fa-check-to-slot"></i>
+                                        <p>AI Content Making</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="discount__marker">
+                            <h5>
+                                Get a 90% Discount 
+                                <br>
+                                on your First Purchase
+                            </h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Features Section -->
-    <div class="container-fluid bg-dark-colored">
-        <div class="container pt-24">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="img-holder-featured">
-                        <img src="images/security.png" class="h-100 w-100">
+    <!--  Mails Features -->
+    <div class="mail-features bg-dark-colored border-11bot">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-7">
+                    <div class="image-holder img-holder-featured">
+                        <img src="images/Storage Analysis.png" class="w-100 h-100" auto-change-index="1">
+                        <img src="images/Templated Mail.png" class="w-100 h-100" auto-change-index="2" style="display: none;">
+                        <img src="images/Single Domain.png" class="w-100 h-100" auto-change-index="3" style="display: none;">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-5">
                     <div class="features-description-container">
-                        <span class="crate">
-                            <i class="fa-solid fa-envelope-circle-check"></i>
-                        </span>
-                        <h2>Professional Domain Mails</h2>
-                        <p>
-                            Elevate your professional image with custom domain emails. Instead of generic addresses like "[email address removed]," create professional email addresses like "[email address removed]" or "[email address removed]" that reflect your brand identity. This instills trust and confidence in your clients and partners, showcasing a polished and established online presence.
-                        </p>
-                        <button class="btn-featured-colored open-popup">Become Leader
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+                        <div class="hover__link__contains">
+                            <h2>Brand identification</h2>
+                            <div class="hover__content__contains">
+                                <p>
+                                    Say goodbye to email storage woes! With our professional email packages, you gain access to an unlimited number of email accounts. Create separate inboxes for work, personal, and projects, all managed seamlessly from a single platform.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Get yourself a mail
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hover__link__contains">
+                            <h2>Professional Look</h2>
+                            <div class="hover__content__contains">
+                                <p>
+                                    Elevate your professional image with custom domain emails. Instead of generic addresses like info@gmail.com create professional email addresses like info@adublisher.com that reflect your brand identity.
+                                </p>
+                                <p>
+                                    This builds trust and confidence in your clients and partners, showcasing a polished and established online presence.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Check our Professional Mails
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hover__link__contains">
+                            <h2>Credibility & Trust </h2>
+                            <div class="hover__content__contains show__content">
+                                <p>
+                                    Optimize and organize your data seamlessly for enhanced accessibility and performance.
+                                </p>
+                                <p>
+                                    With our comprehensive mail management tools, you can stay organized, productive, and in control of your email communications.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Read more about storage
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark-colored">
-        <div class="container pt-24">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="img-holder-featured">
-                        <img src="images/measures.png" class="h-100 w-100">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="features-description-container">
-                        <span class="prime">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </span>
-                        <h2>Security Verifications</h2>
-                        <p>
-                            Your data security is our top priority. We employ robust security measures to protect your emails and personal information, including:
-                        </p>
-                        <ul>
-                            <li>
-                                <b>Two-Factor Authentication (2FA):</b>Add an extra layer of security to your account by enabling two-factor authentication, requiring a code from your phone in addition to your password.
-                            </li>
-                            <li>
-                                <b>SSL Encryption:</b>All your email communications are encrypted using SSL technology, ensuring that your data remains secure during transmission.
-                            </li>
-                            <li>
-                                <b>Regular Security Audits:</b>We conduct regular security audits and vulnerability assessments to identify and address any potential security threats.
-                            </li>
-                        </ul>
-                        <button class="btn-featured-colored open-popup">Become Leader 
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+    <div class="container-fluid bg-dark-colored border-11bot">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="advanced__features__content">
+                        <div class="context__content">
+                            <h2>Boost Your Business Image with a Professional Email <span>Unlock Trust, Credibility, and Efficiency for Your Brand
+                                Get Started Today and Experience Our Advanced Features!</span></h2>
+                            <button class="btn-featured-colored open-popup">Read our getting started guides
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                        <div class="context__product">
+                            <div class="products">
+                                <h3>
+                                    Problem
+                                </h3>
+                                <p>
+                                    Without a professional email, your business risks appearing untrustworthy, leading to lost clients and missed opportunities.
+                                </p>
+                            </div>
+                            <div class="products">
+                                <h3>
+                                    Solution
+                                </h3>
+                                <p>
+                                    Switch to a branded email address to enhance credibility, protect your business from security risks, and streamline communication.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        
+        </div>
+    </div>
+    <!-- Features Section -->
+    <div class="container-fluid bg-dark-colored border-11bot">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <div class="features-description-container">
+                        <div class="hover__link__contains">
+                            <h2>Email Grouping & Spam Management</h2>
+                            <div class="hover__content__contains">
+                                <p>
+                                    Organize and streamline your inbox by grouping related emails while filtering out spam. Improve email efficiency and maintain a clutter-free experience by categorizing important messages and blocking unwanted ones.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Get yourself a mail
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hover__link__contains">
+                            <h2>Professional Look</h2>
+                            <div class="hover__content__contains">
+                                <p>
+                                    Elevate your professional image with custom domain emails. Instead of generic addresses like info@gmail.com create professional email addresses like info@adublisher.com that reflect your brand identity.
+                                </p>
+                                <p>
+                                    This builds trust and confidence in your clients and partners, showcasing a polished and established online presence.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Check our Professional Mails
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hover__link__contains">
+                            <h2>Credibility & Trust </h2>
+                            <div class="hover__content__contains show__content">
+                                <p>
+                                    Optimize and organize your data seamlessly for enhanced accessibility and performance.
+                                </p>
+                                <p>
+                                    With our comprehensive mail management tools, you can stay organized, productive, and in control of your email communications.
+                                </p>
+                                <button class="btn-featured-colored open-popup">Read more about storage
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="img-holder-featured">
+                        <img src="images/Templated Mail.png" class="h-100 w-100" auto-change-index="1">
+                        <img src="images/Gouping.png" class="h-100 w-100" auto-change-index="2" style="display: none;">
+                        <img src="images/Crafting Brand.png" class="h-100 w-100" auto-change-index="3" style="display: none;">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Testimonials Section -->
-    <div id="testimonials" class="bg-dark-colored">
-        <div class="container pt-24">
-            <div class="text-wrapper bg-blight text-center">
-                <i class="fa-brands fa-intercom icon-daring"></i>
-                <h2>What our clients say</h2>
-                <p>
-                    See why our clients trust us. Read genuine testimonials from real people who have benefited from our solutions.
-                    <br class="d-none d-md-flex"> Your satisfaction is our priority.
-                </p>
-            </div>
-            <div class="testimonial-container">
-                <div class="test-cont-item">
-                    <div class="text-cont-body">
-                        <div class="img-holder-testimonials">
-                            <img src="images/women-smiling.jpg" class="w-100 h-100 active-testimonial">
-                        </div>
-                        <div class="content-holder-testimonials">
-                            <p>
-                                The project was well-executed, and the team demonstrated excellent collaboration. The final product met all the requirements and exceeded expectations in terms of design and functionality.The communication throughout the project was clear and efficient.
-                            </p>
-                            <h2>Becky Nelson</h2>
-                            <div class="star-icon-holder">
-                                <i class='bx bxs-star'></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="small-testimonial one">
-                    <img src="images/avatar1.jpg" class="small-testimonial-img">
-                    <p>Sarah consistently exceeds expectations. Her dedication and positive attitude are contagious, and she's always willing to lend a helping hand. Her contributions have significantly improved team productivity.</p>
-                    <h2>Darwin Hyle</h2>
-                </div>
-                <div class="small-testimonial two">
-                    <img src="images/women-carrying-box.jpg" class="small-testimonial-img">
-                    <p>While Michael is a talented team member, his time management skills could be improved. Focusing on prioritizing tasks and setting realistic deadlines will enhance his overall performance.</p>
-                    <h2>Hayley Knight</h2>
-                </div>
-                <div class="small-testimonial three">
-                    <img src="images/avatar2.jpg" class="small-testimonial-img">
-                    <p>Emily has shown great potential in her recent projects. With a little more confidence, she can become a valuable asset to the team. I encourage her to take on more challenging tasks, as this will help her to grow and develop her skills.</p>
-                    <h2>Goofy Mage</h2>
-                </div>
-                <div class="small-testimonial four">
-                    <img src="images/avatar3.jpg" class="small-testimonial-img">
-                    <p>David's recent performance has been disappointing. His lack of attention to detail and frequent errors have negatively impacted the team's efficiency. He needs to improve his focus and accuracy.</p>
-                    <h2>Christina</h2>
-                </div>
-                <div class="small-testimonial five">
-                    <img src="images/avatar4.jpg" class="small-testimonial-img">
-                    <p>Alex is a reliable team member who consistently meets expectations. However, there's room for growth in terms of taking initiative and offering innovative solutions. He's always willing to lend a hand and is a reliable source of support.</p>
-                    <h2>Messi</h2>
-                </div>
-                <div class="small-testimonial six">
-                    <img src="images/avatar5.jpg" class="small-testimonial-img">
-                    <p>Alex is a reliable team member who consistently meets expectations. However, there's room for growth in terms of taking initiative and offering innovative solutions. He's always willing to lend a hand and is a reliable source of support.</p>
-                    <h2>Johansson</h2>
-                </div>
-                <div class="btn-page-area mx-auto">
-                    <button class="btn-style-colored">
-                        <a href="" class="open-popup">Join us now</a>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                    <div class="pagination">
-                        <button class="prev-page pagination-icon" disabled><i class="fa-solid fa-arrow-left"></i></button>
-                        <span class="page-info"></span>
-                        <button class="next-page pagination-icon"><i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Section -->
-    <section id="contact" class="text-center p-0 bg-darker-colored">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6">
-                    <div class="image-container-colored">
-                        <img src="images/Freelancers2.png" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="text-wrapper bg-colored">
-                        <i class="fa-solid fa-diamond-turn-right icon-injured"></i>
-                        <h2>
-                            Hire our
-                            <br>  freelancers
-                        </h2>
-                        <p>
-                            Looking for skilled professionals to complete your projects? Our platform connects you with the best freelancers worldwide.
-                        </p>
-                        <button href="#contact" class="btn-style-colored darker bordernone">
-                            <a href="" class="open-popup">Get Started</a>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- FAQs Section -->
-    <section id="faqs" class="pt-24 bg-dark-colored">
-        <div class="container p-0">
+    <section id="faqs" class="pt-24 bg-dark-colored border-11bot overflow-hidden">
+        <div class="p-0">
             <div class="text-wrapper bg-colored text-center col-lg-8 mx-auto">
-                <i class="fa-regular fa-comments icon-dark"></i>
+                <div class="header__image__container justify-center">
+                    <img src="images/3.png" class="h-100 w-100">
+                </div>
                 <h2>FAQ's</h2>
                 <p>
-                    Your professional email solution. Looking for an cheap yet unique mail.
-                    <br class="d-none d-lg-flex"> We got you. Sign up to get our latest prices.
+                    Find quick answers to your most common questions and get the
+                    <br class="d-none d-lg-flex">
+                    support you need with our comprehensive FAQ section
                 </p>
                 <button class="btn-featured-colored">
                     Get in touch
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="show-way">
-                        <h3>
-                            Comprehensive description of FAQ's
-                        </h3>
-                        <p>
-                            FAQs are your go-to resource for quick answers to common queries. Designed to address key concerns, this section provides clear and concise information to help you navigate with ease. Explore the solutions and insights crafted to enhance your experience!
-                        </p>
-                    </div>
-                    <div class="show-insights">
-                        <h2> <a href="">Unlock More</a> with Mailplux Pro <i class="fa-solid fa-unlock-keyhole"></i></h2>
-                        <p>
-                            Unlock more possibilities with Mailplux Pro, designed to elevate your email experience. Access advanced features, enhanced security, and unmatched customization options. Take your communication to the next level with ease and efficiency!
-                        </p>
-                    </div>
-                    <div class="show-insights second">
-                        <span>AI Master Analysis</span>
-                        <h2> <a href="">Competitors Analysis</a> with Mailplux <i class="fa-solid fa-share-nodes"></i></h2>
-                        <p>
-                            Leverage the power of AI to analyze and compare your competitors effortlessly!
-                        </p>
-                        <button class="btn-featured-colored small">
-                            Get in touch
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
+            <div class="tabs-area">
+                <div class="tab">
+                    <p>Featured</p>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="accordion" id="faqAccordion">
+                <div class="tab activated">
+                    <p>Management</p>
+                </div>
+                <div class="tab">
+                    <p>Constant</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="border-11top"></div>
+                <div class="col-12 p-0">
+                    <div class="accordion container" id="faqAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -687,118 +652,116 @@
                     </div>
                 </div>
             </div>
-            <div class="text-wrapper bg-colored col-lg-8 my-0 mx-auto py-4 msg-group">
-                <div class="cover">
-                    <h3> Got any question ?</h3>
-                    <p class="small-para">Send us mail right away.</p>
-                </div>
-                <button href="#contact" class="btn-outliner-light">
-                    Message
-                </button>
-            </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pt-24 text-dark">
+    <section id="pricing" class="pt-24 text-dark bg-dark-colored">
         <div class="container">
             <div class="text-wrapper bg-blight text-center">
-                <h2><i class="fa-solid fa-tags"></i> Subscription</h2>
-                <p>Where clarity meets convenience in your digital communication.</p>
+                <div class="header__image__container justify-center">
+                    <img src="images/4.png" class="h-100 w-100">
+                </div>
+                <h2>Subscription</h2>
+                <p>
+                    Your professional email solution. Looking for an cheap yet unique mail.
+                    <br>
+                    We got you. Sign up to get our latest prices.
+                </p>
             </div>
-            <div class="row text-center my-5 align-items-center justify-content-center">
-                <!-- Free Plan -->
-                <div class="col-12 col-md-8 col-lg-4">
-                    <div class="card-shadow">
-                        <div class="card-head">
-                            <h5>Free Plan</h5>
-                            <h2>$0 <small>/month</small></h2>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-white-shaded">Get Started</a>
-                    </div>
-                </div>
-                <!-- Pro Plan -->
-                <div class="col-12 col-md-8 col-lg-4">
-                    <div class="card-shadow top-rated">
-                        <div class="card-head">
-                            <h5>Team Plan</h5>
-                            <h2>$49<small>/month</small></h2>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-melted-shaded">Check Out</a>
-                    </div>
-                </div>
-                <!-- Premium Plan -->
-                <div class="col-12 col-md-8 col-lg-4">
-                    <div class="card-shadow">
-                        <div class="card-head">
-                            <h5>Premium Plan</h5>
-                            <h2>$149 <small>/month</small></h2>
-                        </div>
-                        <div class="card-body">
-                            <ul class="list-unstyled">
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                                <li><i class="fa-solid fa-check"></i> 5 Projects</li>
-                                <li><i class="fa-solid fa-check"></i> Community Support</li>
-                                <li><i class="fa-solid fa-check"></i> Basic Features</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-green-shaded">Go Premium</a>
-                    </div>
-                </div>
-            </div>
+                <table class="table table-bordered table-striped pricing-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>
+                              <div class="master-it">
+                                <h2>Free</h2>
+                                <h1>0$</h1>
+                                <p class="text-muted mt-2">Basic features for individuals</p>
+                                <button class="btn btn-select">Try it</button>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="master-it">
+                                <h2>Startup</h2>
+                                <h1>29$</h1>
+                                <p class="text-muted mt-2">Ideal for small businesses</p>
+                                <button class="btn btn-select">Upgrade now</button>
+                                </div>
+                            </th>
+                            <th>
+                              <div class="master-it">
+                                <h2>Enterprise</h2>
+                                <h1>149$</h1>
+                                <p class="text-muted mt-2">Comprehensive solutions for large industries</p>
+                                <button class="btn btn-select">Contact Us</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="description">User Account</td>
+                            <td><span class="tick">1 Account</span></td>
+                            <td><span class="cross">5 Accounts</span></td>
+                            <td><span class="tick">Unlimited Accounts</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Storage</td>
+                            <td><span class="cross">3GB</span></td>
+                            <td><span class="tick">50GB</span></td>
+                            <td><span class="tick">Unlimited</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Features</td>
+                            <td><span class="tick">Standard</span></td>
+                            <td><span class="tick">Improved</span></td>
+                            <td><span class="cross">Enhanced</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Collaboration Features</td>
+                            <td><span class="tick">-</span></td>
+                            <td><span class="tick">Standard</span></td>
+                            <td><span class="cross">Advanced</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Marketing Tools</td>
+                            <td><span class="cross">-</span></td>
+                            <td><span class="cross">Standard</span></td>
+                            <td><span class="cross">Advanced</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Security</td>
+                            <td><span class="tick">Standard</span></td>
+                            <td><span class="cross">Improved</span></td>
+                            <td><span class="cross">Advanced</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Integration Options</td>
+                            <td><span class="tick">Limited</span></td>
+                            <td><span class="cross">Basic</span></td>
+                            <td><span class="cross">Extensive</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">API Access</td>
+                            <td><span class="tick">-</span></td>
+                            <td><span class="cross">Limited</span></td>
+                            <td><span class="cross">Extended</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Domain Support</td>
+                            <td><span class="tick">-</span></td>
+                            <td><span class="cross">24/7</span></td>
+                            <td><span class="cross">24/7</span></td>
+                        </tr>
+                        <tr>
+                            <td class="description">Customer Support</td>
+                            <td><span class="tick">24/7</span></td>
+                            <td><span class="cross">24/7</span></td>
+                            <td><span class="cross">24/7</span></td>
+                        </tr>
+                    </tbody>
+                </table>
             <div class="row">
                 <div class="col-12 col-lg-3">
                     <div class="mobile-features-view small">
