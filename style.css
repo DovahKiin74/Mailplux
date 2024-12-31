@@ -69,15 +69,15 @@ body{
     align-items: center;
     position: sticky;
     background-color: transparent;
-    height: 10vh;
+    height: auto;
     width: 100%;
     transition: 0.333s linear;
+    padding: 20px 8px;
     z-index: -1;
 }
 .navbar.scrolled-down{
     top: 0;
     background: #040404;
-    /* border-bottom: 1px solid #cccccc38; */
     box-shadow: 0 0 10px #ffffff77;
     border-radius: 0;
     top: 0;
@@ -86,7 +86,6 @@ body{
     z-index: 10000000;
 }
 .navbar.scrolled-down>.container{
-    padding: 20px 8px !important;
 }
 .navbar-brand {
     height: 80px;
@@ -373,21 +372,25 @@ body{
 }
 .choose__content{
     text-align: left;
-    padding: 100px 40px;
+    padding: 40px;
     color: #fff;
 }
 .choose__content h2{
-    font-size: 24px;
+    font-size: 32px;
     line-height: 30px;
     font-weight: 700;
+    margin-block-end: 2.44rem;
 }
-.choose__content h2 span{
+.choose__content p{
+    font-size: 15px;
+    line-height: 20px;
     color: #ffffff65;
+    margin-block-start: 1.44rem;
 }
 .choose__content ul{
     margin: 0;
     padding: 0;
-    margin-block-start: 2.44rem;
+    margin-block-start: 1.44rem;
     margin-block-end: 2.44rem;
     margin-left: 5%;
 }
@@ -397,8 +400,11 @@ body{
     color: #fff;
     background: #040404;
     font-size: 15px;
-    margin: 8px 0;
+    /* margin: 10px 0; */
     align-items: center;
+}
+.choose__content ul li p{
+    color: #fff;
 }
 .choose__content ul li i{
     /* background: #fff; */
@@ -659,6 +665,17 @@ p{
     top: -10%;
     z-index: -1;
 }
+.animated_color.downward{
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    background: linear-gradient(#4be2d6,#3d1484,#b74be2,#e2b04b, #1878f6, #040404, #040404);
+    border-radius: 68% 32% 85% 15% / 34% 52% 48% 66%;
+    filter: blur(100px);
+    left: -10%;
+    top: 50%;
+    z-index: -1;
+}
 .text-wrapper{
     text-align: left;
     margin-bottom: 2rem;
@@ -856,6 +873,8 @@ p.small-para a:hover{
 .img-holder-featured{
     height: 600px;
 }
+
+
 .col-12{
     padding: 0;
 }
@@ -879,7 +898,7 @@ p.small-para a:hover{
     gap: 40px;
 }
 .advanced__features__content h2{
-    font-size: 24px;
+    font-size: 26px;
     line-height: 32px;
     font-weight: 700;
     margin-block-end: 2.88rem;
@@ -898,28 +917,32 @@ p.small-para a:hover{
 .context__content{
     width: auto;
 }
+.context__content p{
+    font-size: 15px;
+}
 .context__product{
-    min-width: 400px;
-    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     height: 100%;
     padding: 0;
 }
 .products{
-    padding: 0 0 24px 32px;
-    border-left: 2.55px solid #2b2f32;
+    width: 50%;
+    padding:24px;
 }
 .products h3{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     margin-block-end: 12px;
 }
 .products p{
     margin: 0;
     font-size: 14px;
     font-weight: 500;
+    color: #ffffff65;
 }
 .mark__icons__container{
-    border: 1px solid #2b2f3260;
     padding: 20px;
     height: 200px;
     align-items: center;
@@ -928,6 +951,7 @@ p.small-para a:hover{
     flex-direction: column;
     margin: 0;
     overflow: hidden;
+    border: 1px solid #2b2f3260;
 }
 .malfunctioned__container{
     display: flex;
@@ -1079,16 +1103,16 @@ p.small-para a:hover{
 .accordion{
     justify-content: center;
     padding: 20px;
-    border: 1px solid #2b2f3260;
+    /* border: 1px solid #2b2f3260; */
     border-top: none;
     border-bottom: none;
 }
 
 .accordion-body{
     border: none;
-    color: var(--med-card-text-color);
-    font-size: var(--med-card-text-font-size);
-    font-weight: var(--med-card-text-font-weight);
+    color: #ffffffa4;
+    font-size: 15px;
+    font-weight: thin;
     line-height: var(--med-card-text-line-height);
     margin: 0;
 }
@@ -1097,8 +1121,8 @@ p.small-para a:hover{
     outline: none !important;
     color: var(--med-card-color);
     color: #fff;
-    font-size: 20px;
-    font-weight: var(--med-card-font-weight);
+    font-size: 18px;
+    font-weight: 700;
     line-height: var(--med-card-line-height);
     background: transparent;
 }
@@ -1306,6 +1330,9 @@ p.small-para a:hover{
     padding: 0;
     padding-block-start: 12rem !important;
 }
+.pbe-24{
+    padding-block-end: 12rem !important;
+}
 .py-24{
     padding: 5rem 0;
 }
@@ -1316,17 +1343,18 @@ p.small-para a:hover{
     padding: 0;
     border: none;
 }
-.container{
-    max-width: 1500px;
-    /* padding: 0; */
+.position-relative{
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
 }
 /* Pricing Plans */
 
 .pricing-table {
-    width: 90%;
-    margin: 50px auto;
     border: 1px solid #3e3e3e5e;
     overflow: hidden;
+    table-layout: fixed; /* Ensures equal column width */
+    width: 100%; 
 }
 
 .pricing-table th {
@@ -1337,7 +1365,7 @@ p.small-para a:hover{
     font-size: 18px;
 }
 .pricing-table th:nth-of-type(1){
-  background: none;
+  background: #121416;
 }
 .pricing-table th:nth-of-type(2){
   background: rgb(123, 10, 85);
@@ -1514,6 +1542,7 @@ p.small-para a:hover{
     transition: 0.3s linear;
 }
 .hover__content__contains.show__content{
+    transition: 0.3s linear !important;
     display: block;
 }
 .icon-dark{
@@ -1558,7 +1587,7 @@ p.small-para a:hover{
 }
 .features-description-container h3{
     font-size: 28px;
-    line-height: 36px;
+    line-height: 38px;
     font-weight: 700;
     margin: 0;
     margin-block-start: 0.44rem;
@@ -1568,7 +1597,7 @@ p.small-para a:hover{
     color: #ffffff9f;
 }
 .features-description-container p{
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffffb1;
     line-height: 28px;
     font-weight: 400;
@@ -1627,8 +1656,8 @@ p.small-para a:hover{
 .btn-featured-colored:hover::after{
     width: 100%;
 }
-/* Mobile Features */
-#mobile{
+/* Advantages */
+#advantages{
     background: url(images/price.png);
     background-position: bottom;
     background-size: cover;
@@ -1847,17 +1876,22 @@ p.small-para a:hover{
 .testimonial-box{
     padding: 60px 35px;
     border-right: 1px solid #2b2f3260 !important;
+    background: url(images/comma.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .testimonial-header .testimonial-username{
-    font-size: 15px;
-    color: #ffffff5f;
-    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: underline;
     padding: 0;
     margin: 0;
 }
 .testimonial-message{
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 400;
     margin: 1.88rem 0;
 }
 /* Footer Section Content */
@@ -1980,7 +2014,7 @@ p.small-para a:hover{
     text-decoration: underline;
 }
 .footer-links-pol{
-    padding: 4rem 30px;
+    padding: 1.3rem 30px;
     border-top: 1px solid #cccccc38;
     text-align: center;
 }
