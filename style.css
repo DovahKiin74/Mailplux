@@ -854,7 +854,7 @@ p.small-para a:hover{
     background: #12111a;
 }
 .img-holder-featured{
-    height: 750px;
+    height: 600px;
 }
 .col-12{
     padding: 0;
@@ -1316,6 +1316,10 @@ p.small-para a:hover{
     padding: 0;
     border: none;
 }
+.container{
+    max-width: 1500px;
+    /* padding: 0; */
+}
 /* Pricing Plans */
 
 .pricing-table {
@@ -1450,7 +1454,7 @@ p.small-para a:hover{
     align-items: center;
 }
 .features-description-container{
-    height: 750px;
+    height: 600px;
     padding: 60px 35px;
     display: flex;
     flex-direction: column;
