@@ -10,6 +10,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.tab');
+    const accordionItems = document.querySelectorAll('.accordion-item');
+    
+    // Function to change the accordion content based on the active tab
+    function updateAccordionContent(tabId) {
+        // Loop through all accordion items and hide them if they don't match the selected tab
+        accordionItems.forEach(item => {
+            const cause = item.getAttribute('data-cause');
+            if (cause === tabId) {
+                item.style.display = 'block';  // Show matching items
+            } else {
+                item.style.display = 'none';   // Hide non-matching items
+            }
+        });
+    }
+
+    // Function to handle tab clicks
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove 'activated' class from all tabs and add it to the clicked tab
+            tabs.forEach(t => t.classList.remove('activated'));
+            tab.classList.add('activated');
+            
+            // Get the tab id (the data-tab attribute) and update accordion content
+            const tabId = tab.getAttribute('data-tab');
+            updateAccordionContent(tabId);
+        });
+    });
+
+    // Initially show the content for the default active tab (management)
+    updateAccordionContent('management');
+});
 
 
 document.querySelectorAll('.features-description-container').forEach((section) => {
