@@ -377,9 +377,9 @@ body{
     color: #fff;
 }
 .choose__content h2{
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
 }
 .choose__content h2 span{
     color: #ffffff65;
@@ -389,12 +389,12 @@ body{
     padding: 0;
     margin-block-start: 2.44rem;
     margin-block-end: 2.44rem;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 .choose__content ul li{
     list-style: none;
     display: flex;
-    color: #ffffff65;
+    color: #fff;
     background: #040404;
     font-size: 15px;
     margin: 8px 0;
@@ -879,9 +879,9 @@ p.small-para a:hover{
     gap: 40px;
 }
 .advanced__features__content h2{
-    font-size: 32px;
-    line-height: 44px;
-    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
     margin-block-end: 2.88rem;
 }
 .advanced__features__content h2 span{
@@ -992,8 +992,8 @@ p.small-para a:hover{
     padding: 30px;
 }
 .discount__marker h5{
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 900;
 }
 
@@ -1849,14 +1849,14 @@ p.small-para a:hover{
     border-right: 1px solid #2b2f3260 !important;
 }
 .testimonial-header .testimonial-username{
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff5f;
     font-weight: 700;
     padding: 0;
     margin: 0;
 }
 .testimonial-message{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
     margin: 1.88rem 0;
 }
