@@ -10,6 +10,108 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('section');
+    
+    // Flag to prevent active class changes while scrolling
+    let isScrolling = false;
+
+    // Optionally adjust for a fixed navbar height (if you have one)
+    const navbarHeight = 50; // Adjust this to the height of your navbar if needed
+
+    // Function to handle click on nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            // Remove active class from all nav links
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Add active class to clicked link
+            this.classList.add('active');
+
+            // Scroll smoothly to the target section
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            
+            // Mark that we are scrolling
+            isScrolling = true;
+
+            // Scroll to the section
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+
+            // After scrolling finishes, remove the flag and update the active section
+            setTimeout(() => {
+                isScrolling = false;
+                setActiveSection();
+            }, 500); // Adjust timeout to match your scroll duration
+        });
+    });
+
+    // Function to update active link based on the section in the viewport
+    function setActiveSection() {
+        if (isScrolling) return; // Don't run if we're currently scrolling
+
+        let currentSection = null;
+
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+
+            // Check if the top of the viewport has hit the top of the section
+            if (rect.top <= 0 && rect.top > -rect.height) {
+                currentSection = section;
+            }
+        });
+
+        if (currentSection) {
+            // Find the corresponding nav link for the section
+            const activeLink = document.querySelector(`.navbar-nav .nav-link[href="#${currentSection.id}"]`);
+
+            // Remove active class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Add active class to the corresponding nav link
+            if (activeLink) activeLink.classList.add('active');
+        }
+    }
+
+    // Throttle the scroll event (only update active link on scroll completion)
+    let scrollTimeout;
+    window.addEventListener('scroll', () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            if (!isScrolling) {
+                setActiveSection();
+            }
+        }, 100); // Delay to check for active section
+    });
+
+    // Run once initially to set the active class if the page is scrolled
+    setActiveSection();
+
+    // Handle the case where the page is loaded with a hash (e.g., #section1)
+    if (window.location.hash) {
+        const initialSection = document.querySelector(window.location.hash);
+        if (initialSection) {
+            initialSection.scrollIntoView({ behavior: 'smooth' });
+
+            // After the scroll, update the active class
+            setTimeout(() => {
+                setActiveSection(); // Update the active class after smooth scroll finishes
+            }, 500); // Adjust the timeout to match the scroll duration
+        }
+    }
+});
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
     const accordionItems = document.querySelectorAll('.accordion-item');
