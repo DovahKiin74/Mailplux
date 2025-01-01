@@ -108,7 +108,7 @@ body{
     border: 1px solid transparent;
     /* border-radius: 5px; */
     font-size: 15px;
-    padding: 6px 8px !important;
+    padding: 6px 8px;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -131,9 +131,8 @@ body{
     transform: scaleX(1);
 }
 .nav-link.active{
-    /* background: #019084; */
     font-weight: 600;
-    color: #fff !important;
+    color: #1ec1b3 !important;
 }
 .nav-link.active:hover{
     border-bottom: 1px solid #fff;
@@ -498,7 +497,7 @@ body{
 }
 .cover h3,
 .cover p.small-para{
-    margin: 0 !important;
+    margin: 0;
 }
 .btn-outliner-light{
     text-decoration: none;
@@ -583,7 +582,7 @@ body{
 .border-11top{
     width: 100%;
     overflow: hidden;
-    border-top: 1px solid #2b2f3260 !important;
+    border-top: 1px solid #2b2f3260;
 }
 /* Contact Information */
 .contact-information-section{
@@ -656,13 +655,13 @@ p{
 }
 .animated_color{
     position: absolute;
-    height: 600px;
-    width: 1200px;
+    height: 80%;
+    width: 35%;
     background: linear-gradient(#4be2d6,#3d1484,#b74be2,#e2b04b, #1878f6, #040404, #040404);
     border-radius: 68% 32% 85% 15% / 34% 52% 48% 66%;
     filter: blur(100px);
-    right: -10%;
-    top: -10%;
+    right: -5%;
+    top: -20%;
     z-index: -1;
 }
 .animated_color.downward{
@@ -1028,7 +1027,7 @@ p.small-para a:hover{
     padding: 0 20px;
     margin: 0;
     background: #040404;
-    color: #fff !important;
+    color: #fff;
     height: 100%;
     align-items: center;
     border-bottom: 10px solid transparent;
@@ -1118,13 +1117,14 @@ p.small-para a:hover{
 }
 .accordion-button{
     border: none;
-    outline: none !important;
+    outline: none;
     color: var(--med-card-color);
     color: #fff;
     font-size: 18px;
     font-weight: 700;
     line-height: var(--med-card-line-height);
     background: transparent;
+    user-select: none;
 }
 .accordion-button:not(.collapsed){
     color: #06aea0;
@@ -1134,7 +1134,7 @@ p.small-para a:hover{
     background: transparent;
 }
 .accordion-button::after{
-    color: #fff !important;
+    color: #fff;
 }
 .accordion-item.collapsed{
     background: red;
@@ -1308,7 +1308,7 @@ p.small-para a:hover{
 
 .bg-dark-colored{
     color: #fff;
-    background: #040404 !important;
+    background: #040404;
 }
 .bg-image-colored{
     background: url(images/warningBackground.png);
@@ -1328,10 +1328,10 @@ p.small-para a:hover{
 }
 .pt-24{
     padding: 0;
-    padding-block-start: 12rem !important;
+    padding-block-start: 12rem;
 }
 .pbe-24{
-    padding-block-end: 12rem !important;
+    padding-block-end: 12rem;
 }
 .py-24{
     padding: 5rem 0;
@@ -1408,7 +1408,7 @@ p.small-para a:hover{
 
 .pricing-table .description {
     text-align: left;
-    color: #fff !important;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
     background: #131517;
@@ -1430,7 +1430,7 @@ p.small-para a:hover{
 }
 .master-it p{
   font-size: 13px;
-  color: #fff !important;
+  color: #fff;
 }
 .btn-select{
   width: 100%;
@@ -1542,7 +1542,7 @@ p.small-para a:hover{
     transition: 0.3s linear;
 }
 .hover__content__contains.show__content{
-    transition: 0.3s linear !important;
+    transition: 0.3s linear;
     display: block;
 }
 .icon-dark{
@@ -1658,7 +1658,6 @@ p.small-para a:hover{
 }
 /* Advantages */
 #advantages{
-    background: url(images/price.png);
     background-position: bottom;
     background-size: cover;
     padding-bottom: 10rem;
@@ -1875,7 +1874,7 @@ p.small-para a:hover{
 }
 .testimonial-box{
     padding: 60px 35px;
-    border-right: 1px solid #2b2f3260 !important;
+    border-right: 1px solid #2b2f3260;
     background: url(images/comma.png);
     background-position: center;
     background-size: contain;
@@ -2042,6 +2041,9 @@ p.small-para a:hover{
     .footer-content{
         margin: 10px 30px;
     }
+    .text-wrapper.bg-colored p{
+        line-height: 24px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -2061,6 +2063,63 @@ p.small-para a:hover{
     }
     .card__one.second__hover{
         border: none;
+    }
+    .pt-24{
+        padding: 0;
+        padding-block-start: 4rem;
+    }
+    .features-description-container,
+    .img-holder-featured{
+        height: 500px;
+    }
+    .features-description-container{
+        padding: 35px;
+    }
+    .choose__content{
+        padding: 40px 20px;
+    }
+    .accordion-item{
+        width: 80%;
+    }
+    .text-wrapper.bg-blight h1{
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .text-wrapper.bg-colored h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .text-wrapper.bg-blight p{
+        font-size: 14.44px;
+        line-height: 24px;
+    }
+    .text-wrapper.bg-colored p{
+        font-size: 14.44px;
+        line-height: 24px;
+    }
+    .features-description-container h2{
+        font-size: 22px;
+    }
+    .features-description-container h3{
+        font-size: 26px;
+    }
+    .features-description-container p{
+        font-size: 14.44px;
+        line-height: 24px;
+    }
+    .choose__content h2{
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .choose__content p{
+        font-size: 14.44px;
+        line-height: 24px;
+    }
+    .products p{
+        font-size: 13px;
+    }
+    .accordion-body{
+        font-size: 14.44px;
     }
 }
 
@@ -2085,10 +2144,28 @@ p.small-para a:hover{
     .newsletter-footer h2{
         margin-bottom: 1rem;
     }
-
-
     .footer-info{
         margin-bottom: 4rem;
+    }
+    .features-description-container{
+        border: 1px solid #2b2f3260;
+    }
+    .testimonial-box{
+        border: 1px solid #2b2f3260;
+        border-top: none;
+        border-bottom: none;
+    }
+    .advanced__features__content{
+        border: 1px solid #2b2f3260;
+        border-top: none;
+    }
+    .context__product{
+        border: 1px solid #2b2f3260;
+        border-top: none;
+        border-bottom: none;
+    }
+    .accordion-item{
+        width: 100%;
     }
 }
 @media (max-width: 768px) {  
@@ -2098,8 +2175,8 @@ p.small-para a:hover{
         transition: 0.3333s;
     }
     .navbar-collapse.show .navbar.scrolled-down>.container{
-        padding: 20px 8px !important;
-        background: red !important;
+        padding: 20px 8px;
+        background: red;
     }  
     .navbar-collapse .nav-item{
         margin: 0;
@@ -2210,7 +2287,67 @@ p.small-para a:hover{
         line-height: var(--med-text-line-height);
         margin-block-end: var(--med-text-block-margin);
     }
-    
+    .text-wrapper.bg-blight h1{
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 900;
+    }
+    .pt-24{
+        padding-block-start: 2.4rem;
+    }
+    .pbe-24{
+        padding: unset;
+    }
+    .hero{
+        padding: 0;
+        padding-block-end: 2.4rem;
+    }
+    .card__one,
+    .card__one.second__hover,
+    .card__one.last{
+        border: 1px solid #2b2f3260;
+        border-top: none;
+        border-bottom: none;
+        padding: 20px;
+    }
+    .card--icon{
+        padding: 10px;
+    }
+    .card--description p{
+        font-size: 14px;
+        color: #ffffff79;
+    }
+    .text-wrapper.bg-blight p{
+        font-size: 14.44px;
+        line-height: 22px;
+        color: #ffffff79;
+    }
+    .text-wrapper.bg-colored p{
+        font-size: 14.44px;
+        line-height: 22px;
+        color: #ffffff79;
+    }
+    .text-wrapper.bg-colored h2{
+        font-size: 28px;
+    }
+    .features-description-container h3 {
+        font-size: 26px;
+        line-height: 32px;
+        font-weight: 900;
+    }
+    .features-description-container{
+        padding: 20px;
+    }
+    .products{
+        width: 100%;
+    }
+    .accordion.container.p-5{
+        padding: 20px 0;
+    }
+    #advantages,
+    #pricing{
+        padding: 2.44rem 0;
+    }
 }
 
 
